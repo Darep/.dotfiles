@@ -11,14 +11,15 @@ if [ ! -d "mcserver-$1" ]; then
 fi
 
 WORLD=$2
-TEMP=/home/mc/temp/minecraft-overviewer/mcserver-$1/$2
+TEMP=/home/mc/temp/minecraft-overviewer/mcserver-$1
 
 # Copy the world first to a temp location
-cp -a /home/mc/mcservers/mcserver-$1/$WORLD $TEMP
+mkdir -p $TEMP
+cp -a /home/mc/mcservers/mcserver-$1/$WORLD $TEMP/
 
 # generate!
 mkdir -p /home/mc/public_html/$1
 overviewer.py \
           --rendermodes=smooth-lighting \
-          $TEMP \
+          $TEMP/$WORLD \
           /home/mc/public_html/$1
