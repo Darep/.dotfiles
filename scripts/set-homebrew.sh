@@ -1,5 +1,8 @@
 #!/bin/bash
 
+brew update
+brew upgrade
+
 # Install GNU core utilities
 brew install git grc coreutils
 
