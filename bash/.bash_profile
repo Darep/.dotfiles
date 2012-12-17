@@ -5,3 +5,6 @@ for file in ~/.{path,bash_prompt,aliases,functions,extra}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
+
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
