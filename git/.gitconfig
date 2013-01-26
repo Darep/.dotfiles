@@ -1,6 +1,6 @@
 [user]
 	name = Antti-Jussi Kovalainen
-	email = dareppi@gmail.com
+	email = ajk@ajk.fi
 [color]
 	ui = auto
 [color "branch"]
@@ -37,3 +37,6 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = pico
