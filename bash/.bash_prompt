@@ -1,7 +1,3 @@
-# @gf3’s Sexy Bash Prompt, inspired by “Extravagant Zsh Prompt”
-# Shamelessly copied from https://github.com/gf3/dotfiles
-# Screenshot: http://i.imgur.com/s0Blh.png
-
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
 	export TERM=gnome-256color
 elif infocmp xterm-256color >/dev/null 2>&1; then
@@ -51,7 +47,10 @@ function parse_git_branch() {
 	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-#export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
-#export PS2="\[$ORANGE\]→ \[$RESET\]"
+function bg_jobs(){
+  if [[ $(jobs) =~ "Stopped" ]]; then
+    echo "${RED}⌚ "
+  fi
+}
 
-export PS1="\[${BOLD}${GREEN}\]\w \[$PURPLE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \"(\"\$(parse_git_branch)\") \")\[$WHITE\]\$ \[$RESET\]"
+export PS1="\[${BOLD}${GREEN}\]\w $(bg_jobs)\[$PURPLE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \"(\"\$(parse_git_branch)\") \")\[$WHITE\]\$ \[$RESET\]"
