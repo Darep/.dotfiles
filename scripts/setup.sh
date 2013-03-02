@@ -46,15 +46,21 @@ npm install -g yalr
 #
 # Ruby
 #
-if ! command -v rvm >/dev/null 2>&1; then
-    # Install RVM
-    \curl -L https://get.rvm.io | bash -s stable
-else
-    # Update RVM to latest version
-    rvm get stable
-fi
-rvm install 1.9.3
-rvm use 1.9.3
+
+# Install/update RVM
+# if ! command -v rvm >/dev/null 2>&1; then
+#     \curl -L https://get.rvm.io | bash -s stable
+# else
+#     rvm get stable
+# fi
+
+# Install Ruby via RVM
+# rvm install 1.9.3
+# rvm use 1.9.3
+
+# Install/update rbenv
+brew install rbenv
+brew install ruby-build
 
 # Install Bundler
 gem install bundler
