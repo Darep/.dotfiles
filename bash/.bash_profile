@@ -8,3 +8,6 @@ unset file
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
