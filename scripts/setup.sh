@@ -56,7 +56,8 @@ fi
 
 # Install Ruby via RVM
 rvm install 1.9.3
-rvm use 1.9.3
+rvm install 2.0.0
+rvm use --default 2.0.0
 
 # Install/update rbenv
 #brew install rbenv
