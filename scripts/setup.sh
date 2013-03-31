@@ -15,11 +15,21 @@ brew update
 brew upgrade
 
 # Install GNU core utilities
-brew install git grc coreutils
+brew install grc coreutils
+echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
+
+# Install git
+brew install git
+
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew install findutils
 
 # Install PHP 5.4
 brew tap josegonzalez/homebrew-php
 brew install php54
+
+# Install fasd
+brew install fasd
 
 # Remove outdated versions from the cellar
 brew cleanup
