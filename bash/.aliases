@@ -1,3 +1,4 @@
 alias nano="subl"
 alias mci="mvn2 clean install -DskipTests"
 alias mcp="mvn2 clean package -DskipTests"
+alias mm="middleman"
