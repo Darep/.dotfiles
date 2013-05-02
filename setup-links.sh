@@ -1,15 +1,15 @@
 cd ~
 
-ln -s .dotfiles/bash/.aliases
-ln -s .dotfiles/bash/.bash_login
-ln -s .dotfiles/bash/.bash_profile
-ln -s .dotfiles/bash/.bash_prompt
-ln -s .dotfiles/bash/.bashrc
-ln -s .dotfiles/bash/.extra
-ln -s .dotfiles/bash/.functions
-ln -s .dotfiles/bash/.inputrc
-ln -s .dotfiles/bash/.path
-ln -s .dotfiles/bash/.screenrc
+ln -fs .dotfiles/bash/.aliases
+ln -fs .dotfiles/bash/.bash_login
+ln -fs .dotfiles/bash/.bash_profile
+ln -fs .dotfiles/bash/.bash_prompt
+ln -fs .dotfiles/bash/.bashrc
+ln -fs .dotfiles/bash/.extra
+ln -fs .dotfiles/bash/.functions
+ln -fs .dotfiles/bash/.inputrc
+ln -fs .dotfiles/bash/.path
+ln -fs .dotfiles/bash/.screenrc
 
-ln -s .dotfiles/git/.gitconfig
-ln -s .dotfiles/git/.gitignore_global
+ln -fs .dotfiles/git/.gitconfig
+ln -fs .dotfiles/git/.gitignore_global
