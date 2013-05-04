@@ -5,7 +5,7 @@ Settings
 *.cache
 
 # Package Control Noise
-Packages/User/Package\ Control.*
+Packages/User/Package\ Control.last-run
 
 # Misc
 Backup

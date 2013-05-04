@@ -1,0 +1,30 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Alignment",
+		"CoffeeScript",
+		"ColorPicker",
+		"DocBlockr",
+		"Emmet",
+		"EncodingHelper",
+		"GitGutter",
+		"HTML Snippets",
+		"HTMLAttributes",
+		"HtmlTidy",
+		"Jasmine",
+		"LoremIpsum",
+		"Markdown Preview",
+		"Package Control",
+		"PhpTidy",
+		"Plist Binary",
+		"Prefixr",
+		"Pretty JSON",
+		"Sass",
+		"Sublime-HTMLPrettify",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"Tag",
+		"Web Inspector 3"
+	]
+}
