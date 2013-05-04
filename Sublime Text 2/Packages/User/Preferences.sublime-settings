@@ -1,0 +1,53 @@
+{
+	"auto_indent": true,
+	"auto_match_enabled": true,
+	"bold_folder_labels": true,
+	"caret_style": "smooth",
+	"color_scheme": "Packages/User/Tomorrow-Night.tmTheme",
+	"detect_indentation": true,
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": true,
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		"dump.rdb",
+		"Thumbs.db"
+	],
+	"folder_exclude_patterns":
+	[
+		".git",
+		".sass-cache",
+		"coverage",
+		"log",
+		"tmp",
+		"node_modules"
+	],
+	"font_face": "Consolas",
+	"font_size": 13.0,
+	"highlight_active_indent_guide": true,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"ignored_words":
+	[
+		"Antti",
+		"Beatstream",
+		"Github",
+		"Jussi",
+		"Kovalainen"
+	],
+	"rulers":
+	[
+		80
+	],
+	"scroll_past_end": true,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"tree_animation_enabled": false,
+	"trim_automatic_white_space": true,
+	"trim_trailing_white_space_on_save": true
+}
