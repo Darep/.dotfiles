@@ -14,7 +14,7 @@ Remove old packages and configuration (if any):
 Create symlinks to "Installed Packages" and "Packages" directories.
 
     $ ln -s ~/.dotfiles/Sublime\ Text\ 2/Installed\ Packages \
-      ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages
+      ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages
     $ ln -s ~/.dotfiles/Sublime\ Text\ 2/Packages \
       ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
 
