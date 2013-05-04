@@ -4,12 +4,12 @@
 
 Clone the repo:
 
-    $ git clone https://github.com/Darep/dotfiles.git ~/.dotfiles
+    $ git clone https://github.com/Darep/dotfiles.git ~/.dotfiles
     
 Remove old packages and configuration (if any):
 
-    $ rm -rf ~/Library/Application\ Support\Sublime\ Text\ 2
-    $ mkdir -p ~/Library/Application\ Support\Sublime\ Text\ 2
+    $ rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2
+    $ mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 2
   
 Create symlinks to "Installed Packages" and "Packages" directories.
 
