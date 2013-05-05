@@ -33,6 +33,7 @@
     */
     "sublimelinter_executable_map":
     {
+        "ruby": "~/.rvm/rubies/ruby-2.0.0-p0/bin/ruby"
     },
 
     /*
