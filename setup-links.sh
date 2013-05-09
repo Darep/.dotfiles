@@ -11,5 +11,7 @@ ln -fs .dotfiles/bash/.inputrc
 ln -fs .dotfiles/bash/.path
 ln -fs .dotfiles/bash/.screenrc
 
+ln -fs .dotfiles/bash/.gemrc
+
 ln -fs .dotfiles/git/.gitconfig
 ln -fs .dotfiles/git/.gitignore_global
