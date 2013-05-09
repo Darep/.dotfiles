@@ -1,6 +1,7 @@
 {
     "jshint_options":
     {
+        "indent"        : 2,
         "passfail"      : false,  // Don't stop on first error
         "browser"       : true,
         "undef"         : true,   // Require all non-global variables be declared before they are used.
