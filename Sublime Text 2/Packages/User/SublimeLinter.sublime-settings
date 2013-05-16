@@ -1,4 +1,9 @@
 {
+    "sublimelinter": "load-save",
+    "sublimelinter_executable_map":
+    {
+        "ruby": "rvm-auto-ruby"
+    },
     "jshint_options":
     {
         "predef" : [
