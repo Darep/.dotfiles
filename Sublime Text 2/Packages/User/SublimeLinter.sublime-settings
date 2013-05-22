@@ -3,17 +3,5 @@
     "sublimelinter_executable_map":
     {
         "ruby": "rvm-auto-ruby"
-    },
-    "jshint_options":
-    {
-        "predef" : [
-            "$"
-        ],
-        "indent"        : 4,
-        "passfail"      : false,  // Don't stop on first error
-        "browser"       : true,
-        "undef"         : true,   // Require all non-global variables be declared before they are used.
-        "trailing"      : true,   // Prohibit trailing whitespaces.
-        "white"         : true    // Check against strict whitespace and indentation rules.
     }
 }
