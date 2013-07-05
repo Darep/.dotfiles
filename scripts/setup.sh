@@ -60,7 +60,7 @@ npm install -g yalr
 # Install/update RVM
 if ! command -v rvm >/dev/null 2>&1; then
     \curl -L https://get.rvm.io | bash -s stable
-	source ~/.rvm/scripts/rvm
+    source ~/.rvm/scripts/rvm
 else
     rvm get stable
 fi
