@@ -3,3 +3,4 @@ alias mci="mvn2 clean install -DskipTests"
 alias mcp="mvn2 clean package -DskipTests"
 alias mm="middleman"
 alias fs="foreman start"
+alias liveen='cap production deploy && terminal-notifier -message "cap deploy done" -title "Check it, yo."'
