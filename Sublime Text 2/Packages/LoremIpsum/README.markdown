@@ -1,12 +1,14 @@
 # LoremIpsum
 
-An extension for Sublime Text 2.
+An extension for Sublime Text 2 and 3!
+
+_(Support for Sublime Text 3 is new, and barely tested - any feedback appreciated - see ST3 section below)_
 
 It allow you to Insert Lorem Ipsum in the editor via menu items or keyboard shortcut.
 
 Select how much text you want from the menu item in `Edit->Text->Lorem Ipsum` or on the right click menu in `Lorem Ipsum`.
 
-Just press the shortcut key (Alt+Command+l on OSX, Control+Alt+l on Windows/Linux) to add Lorem Ipsum text. Keep pressing to add more.
+Just press the shortcut key (Alt+Command+l on OSX, Control+Alt+l on Windows and Shift+Alt+l on Linux) to add Lorem Ipsum text. Keep pressing to add more.
 
 Alternatively, you can also specify the number of paragraphs, by writing a number, and pressing the shortcut key. Lorem Ipsum will check if there is a number directly preceding the selection range, and replace it with that many paragraphs of lorem ipsum. Addind a decimal point, defines the approximate number of words per paragraph.
 
@@ -41,5 +43,15 @@ The easiest way to install this is with [Package Control](http://wbond.net/subli
  * Select LoremIpsum when the list appears.
 
 Package Control will automatically keep Git up to date with the latest version.
+
+### Manual Install for ST3
+
+1. Open the sublime text command pallete, and **Preferences: Browse Packages**
+2. Checout the ST3 branch of this repo in there
+3. Restart ST3
+
+Report bugs here, and I will do my best to repair them (or better still - make the fix, and send me a pull request).
+
+---
 
 If you have some problems or improvements with it, contact me via GitHub.

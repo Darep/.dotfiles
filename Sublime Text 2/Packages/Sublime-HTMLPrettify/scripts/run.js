@@ -21,65 +21,70 @@
  *    distribution.
  */
 
-/*global console, process, require, __dirname */
-
 (function() {
   "use strict";
 
-  var i, len, hash, key, value, raw,
+  // Cache the console log function and the process arguments.
+  var log = console.log;
+  var argv = process.argv;
 
-    // cache the console log function and the process arguments
-    log = console.log,
-    argv = process.argv,
+  // Require path and file system utilities to load the jshint.js file.
+  var path = require('path');
+  var fs = require('fs');
 
-    // require path and file system utilities to load the jshint.js file
-    path = require('path'),
-    fs = require('fs'),
+  // The source file to be prettified, original source's path and some options.
+  var tempPath = argv[2] || "";
+  var filePath = argv[3] || "";
+  var settings = (argv[4] || "").split(" && ");
+  var option = {};
 
-    // the source file to be linted and options
-    source = argv[2] || "",
-    option = {};
+  var html_beautify = require(path.join(__dirname, "beautify-html.js")).html_beautify;
+  var js_beautify = require(path.join(__dirname, "beautify.js")).js_beautify;
+  var css_beautify = require(path.join(__dirname, "beautify-css.js")).css_beautify;
 
-  // the style_html and js_beautify functions work when global by dependance
-  global.style_html =
-    require(path.join(__dirname, "beautify-html.js")).style_html;
+  // Extra arguments with custom options could be passed, so check them now
+  // and add them to the options object.
+  for (var i = 0, len = settings.length; i < len; i++) {
+    var hash = settings[i].split(":");
+    if (hash.length != 2) {
+      continue;
+    }
+    var key = hash[0].trim();
+    var value = hash[1].replace(/^\ /, "");
 
-  global.js_beautify =
-    require(path.join(__dirname, "beautify.js")).js_beautify;
-
-  global.cssbeautify =
-    require(path.join(__dirname, "cssbeautify.js")).cssbeautify;
-
-  // continue only if the source file is specified
-  if (source !== "") {
-
-    // extra arguments with custom options could be passed, so check them now
-    // and add them to the options object
-    for (i = 3, len = argv.length; i < len; i++) {
-      hash = argv[i].split(": ");
-      key = hash[0];
-      value = hash[1];
-
-      // options are stored in key value pairs, such as option.es5 = true
-      option[key] = value;
+    // There is one option that allows array of strings to be passed.
+    if (key == "unformatted") {
+      // eval is evil, but JSON.parse would require usage of only double quotes.
+      option[key] = eval(value);
+      continue;
     }
 
-    // read the source file and, when complete, lint the code
-    fs.readFile(source, "utf8", function(err, data) {
-      if (err) {
-        return;
-      }
+    // Special case 'max_char' to allow for infinite lines.
+    if (key == "max_char" && +value <= 0) {
+      option[key] = Number.MAX_VALUE;
+    }
 
-      // format the code
-      if (source.match(".html?" + "$")) {
-        log(style_html(data, option));
-      }
-      else if (source.match(".css" + "$") == ".css") {
-        log(cssbeautify(data, option));
-      }
-      else if (source.match(".js" + "$") == ".js") {
-        log(js_beautify(data, option));
-      }
-    });
+    // Options are stored in key value pairs, such as option.indent_size = 2.
+    option[key] = value;
   }
+
+  // Read the source file and, when complete, beautify the code.
+  fs.readFile(tempPath, "utf8", function(err, data) {
+    if (err) {
+      log("Error, unable to continue.");
+      return;
+    }
+    else if (filePath.match(".jsm?$") || data.indexOf("<") != 0) {
+      log(js_beautify(data, option));
+    }
+    else if (filePath.match(".html?$") || data.indexOf("<") == 0) {
+      log(html_beautify(data, option));
+    }
+    else if (filePath.match(".css?$")) {
+      log(css_beautify(data, option));
+    }
+    else if (filePath.match(".less$")) {
+      log(css_beautify(data, option));
+    }
+  });
 }());

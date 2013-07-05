@@ -24,7 +24,7 @@
 		"node_modules"
 	],
 	"font_face": "Consolas",
-	"font_size": 13.0,
+	"font_size": 15.0,
 	"highlight_active_indent_guide": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
@@ -45,7 +45,7 @@
 		80
 	],
 	"scroll_past_end": true,
-	"tab_size": 4,
+	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false,
 	"trim_automatic_white_space": true,

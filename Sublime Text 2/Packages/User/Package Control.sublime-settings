@@ -2,7 +2,10 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
+		"AAAPackageDev",
 		"Alignment",
+		"AngularJS",
+		"BracketHighlighter",
 		"CoffeeScript",
 		"ColorPicker",
 		"CSScomb",
@@ -10,12 +13,15 @@
 		"Ember.js Snippets",
 		"Emmet",
 		"EncodingHelper",
+		"Enhanced Clojure",
+		"Git",
 		"GitGutter",
 		"Handlebars",
 		"HTML Snippets",
 		"HTMLAttributes",
 		"HtmlTidy",
 		"Jasmine",
+		"lispindent",
 		"LoremIpsum",
 		"Markdown Preview",
 		"Package Control",
@@ -26,6 +32,7 @@
 		"Sass",
 		"Sublime-HTMLPrettify",
 		"SublimeLinter",
+		"SublimeREPL",
 		"Tag",
 		"Web Inspector 3"
 	]
