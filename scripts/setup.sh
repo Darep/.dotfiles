@@ -41,16 +41,14 @@ brew cleanup
 brew install node
 
 # Install Grunt
-npm install -g grunt
-
-# Install Bower
-npm install -g bower
-
-# Install CoffeeScript
-npm install -g coffee-script
+if ! command -v grunt >/dev/null 2>&1; then
+    npm install -g grunt
+fi
 
 # Install YALR
-npm install -g yalr
+if ! command -v yalr >/dev/null 2>&1; then
+    npm install -g yalr
+fi
 
 
 #
