@@ -1,4 +1,5 @@
 alias nano="subl"
 alias mm="middleman"
 alias fs="foreman start"
+alias rt="RAILS_ENV=test rake test"
 alias liveen='cap production deploy && terminal-notifier -message "cap deploy done" -title "Check it, yo."'
