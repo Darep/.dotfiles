@@ -4,13 +4,10 @@
 	[
 		"AAAPackageDev",
 		"Alignment",
-		"AngularJS",
-		"BracketHighlighter",
 		"CoffeeScript",
 		"ColorPicker",
 		"CSScomb",
 		"DocBlockr",
-		"Ember.js Snippets",
 		"Emmet",
 		"EncodingHelper",
 		"Enhanced Clojure",
@@ -19,22 +16,16 @@
 		"Handlebars",
 		"HTML Snippets",
 		"HTMLAttributes",
-		"HtmlTidy",
-		"Jasmine",
 		"lispindent",
-		"LoremIpsum",
 		"Markdown Preview",
 		"Package Control",
-		"PhpTidy",
 		"Plist Binary",
-		"Prefixr",
 		"Pretty JSON",
 		"Sass",
 		"SCSS",
 		"Sublime-HTMLPrettify",
 		"SublimeLinter",
 		"SublimeREPL",
-		"Tag",
-		"Web Inspector 3"
+		"Tag"
 	]
 }
