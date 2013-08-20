@@ -17,3 +17,6 @@ export M2_HOME=/usr/local/Cellar/maven/3.0.4/libexec
 export M2=$M2_HOME/bin
 export JAVA_HOME=/Library/Java/Home/
 export PATH=$PATH:$M2:/Applications/XAMPP/xamppfiles/bin
+
+# z
+. `brew --prefix`/etc/profile.d/z.sh
