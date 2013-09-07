@@ -1,0 +1,4 @@
+#!/bin/sh
+[ -z "$1" ] && echo "No argument supplied" && exit
+
+git checkout $1 && git pull --rebase
