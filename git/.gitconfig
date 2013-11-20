@@ -3,7 +3,7 @@
 	email = ajk@ajk.fi
 [core]
 	autocrlf = input
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/ajk/.gitignore_global
 	editor = pico
 [color]
 	ui = auto
@@ -40,10 +40,10 @@
 	# Show files ignored by git:
 	ign = ls-files -o -i --exclude-standard
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 	trustExitCode = true
 [diff]
 	tool = diffmerge
