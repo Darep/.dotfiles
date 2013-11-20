@@ -1,5 +1,20 @@
 alias nano="subl"
+alias hosts="sudo nano /etc/hosts"
+
+# Ruby
 alias mm="middleman"
 alias fs="foreman start"
+alias be="bundle exec"
+
+# Rails
 alias rt="RAILS_ENV=test rake test"
+alias mig="rake db:migrate"
+
+# Heroku
+alias h="heroku"
+alias hp="git push heroku"
+alias ho="heroku open"
+alias hc="heroku run console"
+
+# Work stuff
 alias liveen='cap production deploy && terminal-notifier -message "cap deploy done" -title "Check it, yo."'
