@@ -3,6 +3,7 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"ApplySyntax",
 		"CoffeeScript",
 		"ColorPicker",
 		"CSScomb",
