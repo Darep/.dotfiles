@@ -7,13 +7,6 @@ ln -fs .dotfiles/bash/.bash_prompt
 ln -fs .dotfiles/bash/.bashrc
 ln -fs .dotfiles/bash/.extra
 ln -fs .dotfiles/bash/.functions
-ln -fs .dotfiles/bash/.inputrc
 ln -fs .dotfiles/bash/.path
-ln -fs .dotfiles/bash/.screenrc
-
-ln -fs .dotfiles/bash/.gemrc
-
-ln -fs .dotfiles/git/.gitconfig
-ln -fs .dotfiles/git/.gitignore_global
 
 ln -fs .dotfiles/bash/.mackup.cfg
