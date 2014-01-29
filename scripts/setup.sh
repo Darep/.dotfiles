@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #
 # Dev environment setup
 #
@@ -9,7 +10,7 @@ sudo echo 'ok!'
 
 # Install homebrew
 if ! command -v brew >/dev/null 2>&1; then
-    ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 fi
 brew update
 brew upgrade
@@ -24,12 +25,11 @@ brew install git
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
 
-# Install PHP 5.4
-brew tap josegonzalez/homebrew-php
-brew install php54
-
 # Install fasd
 brew install fasd
+
+# Install z
+brew install z
 
 # Remove outdated versions from the cellar
 brew cleanup
@@ -38,7 +38,8 @@ brew cleanup
 #
 # NodeJS
 #
-brew install node
+
+# brew install node
 
 # Install Grunt
 if ! command -v grunt >/dev/null 2>&1; then
@@ -68,21 +69,8 @@ rvm install 1.9.3
 rvm install 2.0.0
 rvm use --default 2.0.0
 
-# Install/update rbenv
-#brew install rbenv
-#brew install ruby-build
-
 # Install Bundler
 gem install bundler
-
-# Install Compass
-gem install compass
-
-# Install Foreman
-gem install foreman
-
-# Install Rails
-gem install rails
 
 # Install pow (as an Apache proxy)
 echo 'export POW_DST_PORT=88' >> ~/.powconfig; source ~/.powconfig
@@ -97,6 +85,7 @@ gem install powder
 #
 # Clojure
 #
+
 brew install clojure
 
 # Install Leiningen
@@ -106,4 +95,5 @@ brew install leiningen
 #
 # Databases
 #
-#open http://postgresapp.com/download
+
+# open http://postgresapp.com/download
