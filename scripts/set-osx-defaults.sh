@@ -100,9 +100,8 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
 # Add iPhone Simulator.app to Applications
-ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app ~/Applications
-
-
+mkdir ~/Applications
+ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app ~/Applications/
 
 # Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
