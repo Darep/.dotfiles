@@ -10,3 +10,5 @@ ln -fs .dotfiles/bash/.functions
 ln -fs .dotfiles/bash/.path
 
 ln -fs .dotfiles/bash/.mackup.cfg
+
+ln -fs .dotfiles/.bin ~/bin
