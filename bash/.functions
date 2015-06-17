@@ -92,3 +92,7 @@ complete -F _setjdk_completion -o filenames defaultjdk
 function port-use() {
     sudo lsof -n -i4TCP:$*
 }
+
+function favicon() {
+    convert $1.png -flatten -colors 256 $1.ico
+}
