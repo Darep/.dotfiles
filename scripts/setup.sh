@@ -42,14 +42,9 @@ brew cleanup
 # brew install node
 
 # Install Grunt
-if ! command -v grunt >/dev/null 2>&1; then
-    npm install -g grunt
-fi
-
-# Install YALR
-if ! command -v yalr >/dev/null 2>&1; then
-    npm install -g yalr
-fi
+# if ! command -v grunt >/dev/null 2>&1; then
+#     npm install -g grunt
+# fi
 
 
 #
@@ -66,8 +61,8 @@ fi
 
 # Install Ruby via RVM
 rvm install 1.9.3
-rvm install 2.0.0
-rvm use --default 2.0.0
+rvm install ruby
+rvm use --default ruby
 
 # Install Bundler
 gem install bundler
@@ -90,10 +85,3 @@ brew install clojure
 
 # Install Leiningen
 brew install leiningen
-
-
-#
-# Databases
-#
-
-# open http://postgresapp.com/download
