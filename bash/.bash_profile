@@ -10,6 +10,9 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export GREP_OPTIONS='--color=auto'
 
+# git
+source ~/.git_complete
+
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 

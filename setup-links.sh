@@ -7,6 +7,7 @@ ln -fs .dotfiles/bash/.bash_prompt
 ln -fs .dotfiles/bash/.bashrc
 ln -fs .dotfiles/bash/.extra
 ln -fs .dotfiles/bash/.functions
+ln -fs .dotfiles/bash/.git_complete
 ln -fs .dotfiles/bash/.path
 
 ln -fs .dotfiles/bash/.mackup.cfg
