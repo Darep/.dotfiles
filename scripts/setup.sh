@@ -39,12 +39,21 @@ brew cleanup
 # NodeJS
 #
 
-# brew install node
+# Install nvm
+brew install nvm
+echo "Don’t forget to add export NVM_DIR=~/.nvm to .bash_profile"
+echo "Don’t forget to add . $(brew --prefix nvm)/nvm.sh to .bash_profile"
 
-# Install Grunt
-# if ! command -v grunt >/dev/null 2>&1; then
-#     npm install -g grunt
-# fi
+export NVM_DIR=~/.nvm
+. $(brew --prefix nvm)/nvm.sh
+
+# Install node 5.5.0
+nvm install 5.5.0
+nvm use 5.5.0
+nvm alias default 5.5.0
+
+# Update npm
+npm install -g npm
 
 
 #
