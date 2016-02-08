@@ -96,3 +96,5 @@ function port-use() {
 function favicon() {
     convert $1.png -flatten -colors 256 $1.ico
 }
+
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
