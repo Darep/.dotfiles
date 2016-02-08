@@ -32,3 +32,7 @@ export MARIADB_CONFIG_PATH=/usr/local/Cellar/mariadb/10.0.13/bin/mysql_config
 export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2376
 export DOCKER_CERT_PATH=/Users/ajk/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
+
+# nvm
+export NVM_DIR=~/.nvm
+. $(brew --prefix nvm)/nvm.sh
