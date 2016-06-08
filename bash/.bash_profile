@@ -10,7 +10,7 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export GREP_OPTIONS='--color=auto'
 
-# git
+# git auto-completion
 source ~/.git_complete
 
 # rbenv
