@@ -1,4 +1,4 @@
-alias nano="subl"
+alias nano="atom"
 alias hosts="sudo nano /etc/hosts"
 
 # Ruby
