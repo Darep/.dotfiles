@@ -16,12 +16,11 @@ alias hp="git push heroku"
 alias ho="heroku open"
 alias hc="heroku run console"
 
+# Docker
+alias d="docker"
+alias dc="docker-compose"
+alias dcri="docker-compose run -it --rm"
+alias dclogf="docker-compose logs --tail=5 -f"
+
 # Work stuff
-alias liveen='cap production deploy && terminal-notifier -message "cap deploy done" -title "Check it, yo."'
-
-# Firefox OS stuff
-export FFOS_PROJ="/Users/ajk/work/gaia"
-export FIREFOX="/Applications/FirefoxNightly.app/Contents/MacOS/firefox-bin"
-
-alias gaiaff-make="cd $FFOS_PROJ; rm -rfv profile-debug; DEBUG=1 make"
-alias gaiaff="$FIREFOX -profile $FFOS_PROJ/profile-debug -no-remote"
+alias devdns="sudo -b nanodns $(docker-machine ip default)"
