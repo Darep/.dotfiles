@@ -12,21 +12,3 @@ export GREP_OPTIONS='--color=auto'
 
 # git auto-completion
 source ~/.git_complete
-
-# rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# Maven & Java
-export M2_HOME=/usr/local/Cellar/maven/3.0.4/libexec
-export M2=$M2_HOME/bin
-export JAVA_HOME=/Library/Java/Home/
-export PATH=$PATH:$M2:/Applications/XAMPP/xamppfiles/bin
-
-# z
-. `brew --prefix`/etc/profile.d/z.sh
-
-# MariaDB
-export MARIADB_CONFIG_PATH=/usr/local/Cellar/mariadb/10.0.13/bin/mysql_config
-
-# hook docker commands to the "default" docker VM
-eval $(docker-machine env)

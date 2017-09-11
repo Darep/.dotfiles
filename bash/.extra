@@ -1,19 +1,10 @@
-# only init if installed.
-if [[ -f $HOME/.fasd ]]; then
-  # Initialize fasd (https://github.com/clvv/fasd)
-  eval "$(fasd --init auto)"
-
-  # aliases
-
-  # jump to recently used items
-  alias a='fasd -a' # any
-  alias s='fasd -s' # show / search / select
-  alias d='fasd -d' # directory
-  alias f='fasd -f' # file
-  alias z='fasd_cd -d' # cd, same functionality as j in autojump
-  alias v='f -e vim' # quick opening files with vim
-fi
-
 export SVN_EDITOR="subl -w"
 
+# connect docker to default docker-machine
+eval $(docker-machine env)
+
+# RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Node version management
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).

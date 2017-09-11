@@ -1,5 +1,6 @@
-alias nano="atom"
+alias nano="code"
 alias hosts="sudo nano /etc/hosts"
+alias irssi="ssh -t ajk@rihma.ajk.fi screen -rd"
 
 # Ruby
 alias mm="middleman"
@@ -19,8 +20,5 @@ alias hc="heroku run console"
 # Docker
 alias d="docker"
 alias dc="docker-compose"
-alias dcri="docker-compose run -it --rm"
+alias dcr="docker-compose run --rm"
 alias dclogf="docker-compose logs --tail=5 -f"
-
-# Work stuff
-alias devdns="sudo -b nanodns $(docker-machine ip default)"
