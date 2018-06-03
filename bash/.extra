@@ -1,5 +1,3 @@
-export SVN_EDITOR="subl -w"
-
 # connect docker to default docker-machine
 eval $(docker-machine env)
 
