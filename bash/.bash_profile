@@ -12,3 +12,8 @@ export GREP_OPTIONS='--color=auto'
 
 # git auto-completion
 source ~/.git_complete
+
+export LC_CTYPE="en_US.UTF-8"
+
+# pyenv-virtualenv auto init
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
